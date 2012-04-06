@@ -2,7 +2,7 @@ Summary:	Graphical directory tree analyzer
 Summary(pl.UTF-8):	Graficzny analizator drzew katalogów
 Name:		baobab
 Version:	3.4.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.4/%{name}-%{version}.tar.xz
@@ -24,8 +24,8 @@ Requires(post,postun):	gtk-update-icon-cache
 Requires:	glib2 >= 1:2.30.0
 Requires:	gtk+3 >= 3.4.0
 Requires:	hicolor-icon-theme
-Provides:	gnome-utils-baobab = %{version}-%{release}
-Obsoletes:	gnome-utils-baobab < 3.3.2-1
+Provides:	gnome-utils-baobab = 1:%{version}-%{release}
+Obsoletes:	gnome-utils-baobab < 1:3.3.2-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
