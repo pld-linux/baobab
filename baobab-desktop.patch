@@ -1,0 +1,10 @@
+--- baobab-3.8.1/data/baobab.desktop.in.in.old	2013-04-23 21:28:28.404066193 +0200
++++ baobab-3.8.1/data/baobab.desktop.in.in	2013-04-23 21:28:33.610704653 +0200
+@@ -8,7 +8,6 @@ Icon=baobab
+ Terminal=false
+ Type=Application
+ StartupNotify=true
+-MimeType=inode/directory;
+ Categories=GTK;GNOME;System;Filesystem;
+ NotShowIn=KDE;
+ X-GNOME-Bugzilla-Bugzilla=GNOME
