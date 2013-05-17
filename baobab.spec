@@ -1,12 +1,12 @@
 Summary:	Graphical directory tree analyzer
 Summary(pl.UTF-8):	Graficzny analizator drzew katalogów
 Name:		baobab
-Version:	3.8.1
+Version:	3.8.2
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.8/%{name}-%{version}.tar.xz
-# Source0-md5:	2e581b3c65ffd25ea22c76e7d12c2f0f
+# Source0-md5:	768edf897d3626140a56a568b7083241
 Patch0:		%{name}-desktop.patch
 URL:		http://live.gnome.org/GnomeUtils
 BuildRequires:	autoconf >= 2.63
