@@ -1,24 +1,25 @@
 Summary:	Graphical directory tree analyzer
 Summary(pl.UTF-8):	Graficzny analizator drzew katalogów
 Name:		baobab
-Version:	3.8.2
+Version:	3.10
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.8/%{name}-%{version}.tar.xz
-# Source0-md5:	768edf897d3626140a56a568b7083241
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.10/%{name}-%{version}.tar.xz
+# Source0-md5:	244f4dcb6305bd97cb66d7300031d29d
 Patch0:		%{name}-desktop.patch
 URL:		http://live.gnome.org/GnomeUtils
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	gettext-devel >= 0.17
-BuildRequires:	glib2-devel >= 1:2.30.0
-BuildRequires:	gtk+3-devel >= 3.8.0
+BuildRequires:	glib2-devel >= 1:2.37.5
+BuildRequires:	gtk+3-devel >= 3.9.10
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libgtop-devel
 BuildRequires:	pkgconfig >= 1:0.22
 BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.592
+BuildRequires:	vala >= 0.21.1
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.26.0
 Requires(post,postun):	gtk-update-icon-cache
@@ -41,7 +42,7 @@ baobab jest graficznym analizatorem drzew katalogów.
 
 %build
 %{__intltoolize}
-%{__aclocal} -I m4 -I libgd
+%{__aclocal} -I m4
 %{__autoheader}
 %{__autoconf}
 %{__automake}
@@ -80,3 +81,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/HighContrast/*/*/*.png
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
 %{_mandir}/man1/baobab.1*
+%{_datadir}/appdata/baobab.appdata.xml
