@@ -31,7 +31,7 @@ Obsoletes:	gnome-utils-baobab < 1:3.3.2-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-baobab is a graphical directory tree analyzer.
+baobab is a graphical directory tree analyzer..
 
 %description -l pl.UTF-8
 baobab jest graficznym analizatorem drzew katalogów.
