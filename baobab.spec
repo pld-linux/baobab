@@ -1,18 +1,18 @@
 Summary:	Graphical directory tree analyzer
 Summary(pl.UTF-8):	Graficzny analizator drzew katalogów
 Name:		baobab
-Version:	3.12.0
+Version:	3.12.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	d4a66371304e3ee4387723cbf091be31
+# Source0-md5:	1d265bf555143f7aa0a7d961fd8126c2
 Patch0:		%{name}-desktop.patch
 URL:		http://live.gnome.org/GnomeUtils
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	gettext-devel >= 0.17
-BuildRequires:	glib2-devel >= 1:2.37.5
+BuildRequires:	glib2-devel >= 1:2.39.90
 BuildRequires:	gtk+3-devel >= 3.9.10
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libgtop-devel
@@ -21,9 +21,9 @@ BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.592
 BuildRequires:	vala >= 0.24.0
 BuildRequires:	yelp-tools
-Requires(post,postun):	glib2 >= 1:2.26.0
+Requires(post,postun):	glib2 >= 1:2.39.90
 Requires(post,postun):	gtk-update-icon-cache
-Requires:	glib2 >= 1:2.30.0
+Requires:	glib2 >= 1:2.39.90
 Requires:	gtk+3 >= 3.8.0
 Requires:	hicolor-icon-theme
 Provides:	gnome-utils-baobab = 1:%{version}-%{release}
@@ -75,10 +75,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/baobab
-%{_desktopdir}/baobab.desktop
+%{_desktopdir}/org.gnome.baobab.desktop
 %{_iconsdir}/hicolor/*/*/*.png
 %{_iconsdir}/hicolor/*/*/*.svg
 %{_iconsdir}/HighContrast/*/*/*.png
+%{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
 %{_mandir}/man1/baobab.1*
 %{_datadir}/appdata/baobab.appdata.xml
