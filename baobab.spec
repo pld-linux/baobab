@@ -8,7 +8,7 @@ Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.12/%{name}-%{version}.tar.xz
 # Source0-md5:	1d265bf555143f7aa0a7d961fd8126c2
 Patch0:		%{name}-desktop.patch
-URL:		http://live.gnome.org/GnomeUtils
+URL:		https://wiki.gnome.org/Apps/Baobab
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	gettext-devel >= 0.17
