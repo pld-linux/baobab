@@ -1,30 +1,30 @@
 Summary:	Graphical directory tree analyzer
 Summary(pl.UTF-8):	Graficzny analizator drzew katalogów
 Name:		baobab
-Version:	3.12.1
+Version:	3.14.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	1d265bf555143f7aa0a7d961fd8126c2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.14/%{name}-%{version}.tar.xz
+# Source0-md5:	629dfc1f866e04a7292d68b04fe1565c
 Patch0:		%{name}-desktop.patch
 URL:		https://wiki.gnome.org/Apps/Baobab
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	gettext-devel >= 0.17
 BuildRequires:	glib2-devel >= 1:2.39.90
-BuildRequires:	gtk+3-devel >= 3.9.10
+BuildRequires:	gtk+3-devel >= 3.14.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libgtop-devel
 BuildRequires:	pkgconfig >= 1:0.22
 BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.592
-BuildRequires:	vala >= 0.24.0
+BuildRequires:	vala >= 2:0.26.0
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.39.90
 Requires(post,postun):	gtk-update-icon-cache
 Requires:	glib2 >= 1:2.39.90
-Requires:	gtk+3 >= 3.8.0
+Requires:	gtk+3 >= 3.14.0
 Requires:	hicolor-icon-theme
 Provides:	gnome-utils-baobab = 1:%{version}-%{release}
 Obsoletes:	gnome-utils-baobab < 1:3.3.2-1
@@ -77,9 +77,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/baobab
 %{_desktopdir}/org.gnome.baobab.desktop
 %{_iconsdir}/hicolor/*/*/*.png
-%{_iconsdir}/hicolor/*/*/*.svg
 %{_iconsdir}/HighContrast/*/*/*.png
 %{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
 %{_mandir}/man1/baobab.1*
-%{_datadir}/appdata/baobab.appdata.xml
+%{_datadir}/appdata/org.gnome.baobab.appdata.xml

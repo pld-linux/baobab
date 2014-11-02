@@ -5,6 +5,6 @@
  Type=Application
  StartupNotify=true
 -MimeType=inode/directory;
- Categories=GTK;GNOME;System;Filesystem;
+ Categories=GTK;GNOME;System;Filesystem;X-GNOME-Utilities;
  NotShowIn=KDE;
  X-GNOME-Bugzilla-Bugzilla=GNOME
