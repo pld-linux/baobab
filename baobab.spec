@@ -11,7 +11,7 @@ Patch0:		%{name}-desktop.patch
 URL:		https://wiki.gnome.org/Apps/Baobab
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
-BuildRequires:	gettext-devel >= 0.17
+BuildRequires:	gettext-tools >= 0.17
 BuildRequires:	glib2-devel >= 1:2.39.90
 BuildRequires:	gtk+3-devel >= 3.14.0
 BuildRequires:	intltool >= 0.40.0
