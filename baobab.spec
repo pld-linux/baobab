@@ -1,12 +1,12 @@
 Summary:	Graphical directory tree analyzer
 Summary(pl.UTF-8):	Graficzny analizator drzew katalogów
 Name:		baobab
-Version:	3.16.0
+Version:	3.16.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.16/%{name}-%{version}.tar.xz
-# Source0-md5:	e02c8f8c2ea8c34dff490bc79102ff29
+# Source0-md5:	e70b4b79ff18d6984b5d04faa2f63b35
 Patch0:		%{name}-desktop.patch
 URL:		https://wiki.gnome.org/Apps/Baobab
 BuildRequires:	autoconf >= 2.63
@@ -62,12 +62,10 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%update_icon_cache HighContrast
 %update_icon_cache hicolor
 %glib_compile_schemas
 
 %postun
-%update_icon_cache HighContrast
 %update_icon_cache hicolor
 %glib_compile_schemas
 
@@ -76,8 +74,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/baobab
 %{_desktopdir}/org.gnome.baobab.desktop
-%{_iconsdir}/hicolor/*/*/*.png
-%{_iconsdir}/HighContrast/*/*/*.png
+%{_iconsdir}/hicolor/*/apps/baobab.png
+%{_iconsdir}/hicolor/scalable/apps/baobab-symbolic.svg
 %{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
 %{_mandir}/man1/baobab.1*
