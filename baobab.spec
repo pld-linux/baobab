@@ -13,7 +13,7 @@ BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	gettext-tools >= 0.17
 BuildRequires:	glib2-devel >= 1:2.39.90
-BuildRequires:	gtk+3-devel >= 3.14.0
+BuildRequires:	gtk+3-devel >= 3.20.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libgtop-devel
 BuildRequires:	pkgconfig >= 1:0.22
@@ -24,7 +24,7 @@ BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.39.90
 Requires(post,postun):	gtk-update-icon-cache
 Requires:	glib2 >= 1:2.39.90
-Requires:	gtk+3 >= 3.14.0
+Requires:	gtk+3 >= 3.20.0
 Requires:	hicolor-icon-theme
 Provides:	gnome-utils-baobab = 1:%{version}-%{release}
 Obsoletes:	gnome-utils-baobab < 1:3.3.2-1
