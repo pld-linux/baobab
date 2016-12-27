@@ -1,21 +1,20 @@
 Summary:	Graphical directory tree analyzer
 Summary(pl.UTF-8):	Graficzny analizator drzew katalogów
 Name:		baobab
-Version:	3.20.1
+Version:	3.22.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.20/%{name}-%{version}.tar.xz
-# Source0-md5:	c7f2b76f6818282fe53993697089c57b
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.22/%{name}-%{version}.tar.xz
+# Source0-md5:	422a2b6cfa57f3dba92fac2cb13b9ffb
 Patch0:		%{name}-desktop.patch
 URL:		https://wiki.gnome.org/Apps/Baobab
+BuildRequires:	appstream-glib-devel
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
-BuildRequires:	gettext-tools >= 0.17
+BuildRequires:	gettext-tools >= 0.19.8
 BuildRequires:	glib2-devel >= 1:2.39.90
 BuildRequires:	gtk+3-devel >= 3.20.0
-BuildRequires:	intltool >= 0.40.0
-BuildRequires:	libgtop-devel
 BuildRequires:	pkgconfig >= 1:0.22
 BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.592
@@ -41,7 +40,6 @@ baobab jest graficznym analizatorem drzew katalogów.
 %patch0 -p1
 
 %build
-%{__intltoolize}
 %{__aclocal} -I m4
 %{__autoheader}
 %{__autoconf}
