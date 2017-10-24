@@ -1,12 +1,12 @@
 Summary:	Graphical directory tree analyzer
 Summary(pl.UTF-8):	Graficzny analizator drzew katalogów
 Name:		baobab
-Version:	3.24.0
+Version:	3.26.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.24/%{name}-%{version}.tar.xz
-# Source0-md5:	1cb55928b581decb5db5bcbac6bc219f
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.26/%{name}-%{version}.tar.xz
+# Source0-md5:	abdca08093597cf1855b7f1525896d09
 Patch0:		%{name}-desktop.patch
 URL:		https://wiki.gnome.org/Apps/Baobab
 BuildRequires:	appstream-glib-devel
@@ -18,7 +18,7 @@ BuildRequires:	gtk+3-devel >= 3.20.0
 BuildRequires:	pkgconfig >= 1:0.22
 BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.592
-BuildRequires:	vala >= 2:0.26.0
+BuildRequires:	vala >= 2:0.38.0.11
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.39.90
 Requires(post,postun):	gtk-update-icon-cache
