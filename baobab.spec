@@ -1,17 +1,18 @@
 Summary:	GNOME Disk Usage Analyzer
 Summary(pl.UTF-8):	Analizator wykorzystania dysku dla GNOME
 Name:		baobab
-Version:	3.38.0
+Version:	40.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/baobab/3.38/%{name}-%{version}.tar.xz
-# Source0-md5:	b69c1e9e4711d15367b894f63d2081e8
+Source0:	https://download.gnome.org/sources/baobab/40/%{name}-%{version}.tar.xz
+# Source0-md5:	7b95ce82fa0607104fee9da78f3b17c7
 Patch0:		%{name}-desktop.patch
 URL:		https://wiki.gnome.org/Apps/DiskUsageAnalyzer
 BuildRequires:	gettext-tools >= 0.19.8
 BuildRequires:	glib2-devel >= 1:2.44
-BuildRequires:	gtk+3-devel >= 3.20.0
+BuildRequires:	gtk+3-devel >= 3.24.1
+BuildRequires:	libhandy1-devel >= 1.0.0
 BuildRequires:	meson >= 0.50.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig >= 1:0.22
@@ -24,8 +25,9 @@ BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.44
 Requires(post,postun):	gtk-update-icon-cache
 Requires:	glib2 >= 1:2.44
-Requires:	gtk+3 >= 3.20.0
+Requires:	gtk+3 >= 3.24.1
 Requires:	hicolor-icon-theme
+Requires:	libhandy1 >= 1.0.0
 Provides:	gnome-utils-baobab = 1:%{version}-%{release}
 Obsoletes:	gnome-utils-baobab < 1:3.3.2-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
