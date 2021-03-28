@@ -1,11 +1,10 @@
-diff -urN baobab-3.30.0.orig/data/org.gnome.baobab.desktop.in baobab-3.30.0/data/org.gnome.baobab.desktop.in
---- baobab-3.30.0.orig/data/org.gnome.baobab.desktop.in	2018-09-02 16:38:11.000000000 +0200
-+++ baobab-3.30.0/data/org.gnome.baobab.desktop.in	2019-01-27 11:38:00.427295656 +0100
+--- baobab-40.0/data/org.gnome.baobab.desktop.in.orig	2021-03-28 06:54:18.749536623 +0200
++++ baobab-40.0/data/org.gnome.baobab.desktop.in	2021-03-28 06:59:07.484387463 +0200
 @@ -10,7 +10,6 @@
  Terminal=false
  Type=Application
  StartupNotify=true
 -MimeType=inode/directory;
  Categories=GTK;GNOME;System;Filesystem;X-GNOME-Utilities;
- NotShowIn=KDE;
  DBusActivatable=true
+ X-GNOME-UsesNotifications=true
