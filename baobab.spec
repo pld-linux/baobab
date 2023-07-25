@@ -3,7 +3,7 @@ Summary:	GNOME Disk Usage Analyzer
 Summary(pl.UTF-8):	Analizator wykorzystania dysku dla GNOME
 Name:		baobab
 Version:	44.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://download.gnome.org/sources/baobab/44/%{name}-%{version}.tar.xz
@@ -59,6 +59,9 @@ w gałęzi. Wykrywa także dowolne zamontowane/odmontowane urządzenia.
 rm -rf $RPM_BUILD_ROOT
 
 %ninja_install -C build
+
+# not supported by glibc (as of 2.37)
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/ie
 
 %find_lang %{name} --with-gnome
 
