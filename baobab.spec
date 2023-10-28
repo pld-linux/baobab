@@ -2,18 +2,18 @@
 Summary:	GNOME Disk Usage Analyzer
 Summary(pl.UTF-8):	Analizator wykorzystania dysku dla GNOME
 Name:		baobab
-Version:	44.0
-Release:	2
+Version:	45.0
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/baobab/44/%{name}-%{version}.tar.xz
-# Source0-md5:	aed16ed8a70d160cd667dff6049187bd
+Source0:	https://download.gnome.org/sources/baobab/45/%{name}-%{version}.tar.xz
+# Source0-md5:	4272bf219833cee97c58d1f9027ea19d
 Patch0:		%{name}-desktop.patch
 URL:		https://wiki.gnome.org/Apps/DiskUsageAnalyzer
 BuildRequires:	gettext-tools >= 0.19.8
 BuildRequires:	glib2-devel >= 1:2.44
 BuildRequires:	gtk4-devel >= 4.4.0
-BuildRequires:	libadwaita-devel >= 1.2
+BuildRequires:	libadwaita-devel >= 1.4
 BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig >= 1:0.22
@@ -21,7 +21,7 @@ BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	vala >= 2:0.38.0.11
-BuildRequires:	vala-libadwaita >= 1.2
+BuildRequires:	vala-libadwaita >= 1.4
 BuildRequires:	xz
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.44
@@ -29,7 +29,7 @@ Requires(post,postun):	gtk-update-icon-cache
 Requires:	glib2 >= 1:2.44
 Requires:	gtk4 >= 4.4.0
 Requires:	hicolor-icon-theme
-Requires:	libadwaita >= 1.2
+Requires:	libadwaita >= 1.4
 Provides:	gnome-utils-baobab = 1:%{version}-%{release}
 Obsoletes:	gnome-utils-baobab < 1:3.3.2-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
