@@ -2,12 +2,12 @@
 Summary:	GNOME Disk Usage Analyzer
 Summary(pl.UTF-8):	Analizator wykorzystania dysku dla GNOME
 Name:		baobab
-Version:	45.0
+Version:	46.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/baobab/45/%{name}-%{version}.tar.xz
-# Source0-md5:	4272bf219833cee97c58d1f9027ea19d
+Source0:	https://download.gnome.org/sources/baobab/46/%{name}-%{version}.tar.xz
+# Source0-md5:	9d6749f5c88db72c2fcc421b65aa6630
 Patch0:		%{name}-desktop.patch
 URL:		https://wiki.gnome.org/Apps/DiskUsageAnalyzer
 BuildRequires:	gettext-tools >= 0.19.8
