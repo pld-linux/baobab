@@ -1,10 +1,10 @@
---- baobab-40.0/data/org.gnome.baobab.desktop.in.orig	2021-03-28 06:54:18.749536623 +0200
-+++ baobab-40.0/data/org.gnome.baobab.desktop.in	2021-03-28 06:59:07.484387463 +0200
-@@ -10,7 +10,6 @@
+--- baobab-48.0/data/org.gnome.baobab.desktop.in.orig	2025-03-14 18:05:48.000000000 +0100
++++ baobab-48.0/data/org.gnome.baobab.desktop.in	2025-04-29 22:17:10.969541658 +0200
+@@ -10,7 +10,6 @@ Icon=org.gnome.baobab
  Terminal=false
  Type=Application
  StartupNotify=true
 -MimeType=inode/directory;
- Categories=GTK;GNOME;System;Filesystem;X-GNOME-Utilities;
+ Categories=GTK;GNOME;System;Filesystem;Utility;
  DBusActivatable=true
  X-GNOME-UsesNotifications=true
